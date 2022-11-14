@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LargeCell4" id="gTV-IL-0wX" customClass="LargeCell" customModule="CompositionalLayout2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3a1-Xg-FQQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAu-aR-tqW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="X1O-Kj-sdx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track your order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZ0-2f-HgD">
+                                <rect key="frame" x="0.0" y="330" width="375" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="rGp-sL-nw0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hAu-aR-tqW" firstAttribute="top" secondItem="3a1-Xg-FQQ" secondAttribute="top" id="js1-Gy-0dH"/>
+                            <constraint firstItem="DZ0-2f-HgD" firstAttribute="top" secondItem="hAu-aR-tqW" secondAttribute="bottom" constant="10" id="piZ-3j-c1d"/>
+                            <constraint firstItem="hAu-aR-tqW" firstAttribute="leading" secondItem="3a1-Xg-FQQ" secondAttribute="leading" id="qAI-aV-viT"/>
+                            <constraint firstAttribute="trailing" secondItem="hAu-aR-tqW" secondAttribute="trailing" id="sUs-ff-f77"/>
+                            <constraint firstAttribute="trailing" secondItem="DZ0-2f-HgD" secondAttribute="trailing" id="uKI-Ap-UmZ"/>
+                            <constraint firstItem="DZ0-2f-HgD" firstAttribute="leading" secondItem="3a1-Xg-FQQ" secondAttribute="leading" id="wR3-FX-kWU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3a1-Xg-FQQ" secondAttribute="bottom" id="9I7-ck-Os3"/>
+                <constraint firstItem="3a1-Xg-FQQ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UCU-14-wox"/>
+                <constraint firstItem="3a1-Xg-FQQ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tQm-iB-jMN"/>
+                <constraint firstAttribute="trailing" secondItem="3a1-Xg-FQQ" secondAttribute="trailing" id="vQk-kH-wOn"/>
+            </constraints>
+            <point key="canvasLocation" x="113.74045801526717" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
